@@ -1,36 +1,35 @@
 {
-    "login": {
-      "username": "dat",
-      "password": "123"
-    },
-    "checklist": {
-      "mainWarehouse": [
-        "BÀN GHẾ",
-        "SÀN NHÀ",
-        "PCCC",
-        "TƯỜNG",
-        "THÙNG RÁC",
-        "KV TẬP KẾT RÁC"
-      ],
-      "campus": [
-        "BÀN GHẾ",
-        "SÀN NHÀ",
-        "PCCC",
-        "TƯỜNG",
-        "THÙNG RÁC",
-        "KV TẬP KẾT RÁC",
-        "NHÀ VỆ SINH BÀN GHẾ",
-        "NHÀ VỆ SINH SÀN NHÀ",
-        "NHÀ VỆ SINH PCCC",
-        "NHÀ VỆ SINH TƯỜNG"
-      ],
-      "coldStorage": [
-        "BÀN GHẾ",
-        "SÀN NHÀ",
-        "PCCC",
-        "TƯỜNG",
-        "TỦ ĐÔNG, MÁT"
-      ]
-    }
+  "login": {
+    "username": "",
+    "password": ""
+  },
+  "checklist": {
+    "mainWarehouse": [
+      "BÀN GHẾ",
+      "SÀN NHÀ",
+      "PCCC",
+      "TƯỜNG",
+      "THÙNG RÁC",
+      "KV TẬP KẾT RÁC"
+    ],
+    "campus": [
+      "BÀN GHẾ",
+      "SÀN NHÀ",
+      "PCCC",
+      "TƯỜNG",
+      "THÙNG RÁC",
+      "KV TẬP KẾT RÁC",
+      "NHÀ VỆ SINH BÀN GHẾ",
+      "NHÀ VỆ SINH SÀN NHÀ",
+      "NHÀ VỆ SINH PCCC",
+      "NHÀ VỆ SINH TƯỜNG"
+    ],
+    "coldStorage": [
+      "BÀN GHẾ",
+      "SÀN NHÀ",
+      "PCCC",
+      "TƯỜNG",
+      "TỦ ĐÔNG, MÁT"
+    ]
   }
-  
+}
