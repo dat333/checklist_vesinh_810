@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist QR Code App</title>
+  <!-- Bootstrap CSS từ CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- File CSS của bạn -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Phần đăng nhập -->
+    <div id="loginSection">
+      <h2 class="mb-4">Đăng nhập</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="text" id="username" class="form-control" placeholder="Tên đăng nhập" required>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" class="form-control" placeholder="Mật khẩu" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+      </form>
+    </div>
+
+    <!-- Phần hiển thị checklist -->
+    <div id="checklistSection" style="display:none;">
+      <h2 class="mb-4">Checklist</h2>
+      <!-- Các tab điều hướng -->
+      <ul class="nav nav-tabs" id="checklistTabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="mainWarehouse-tab" data-toggle="tab" href="#mainWarehouse" role="tab" aria-controls="mainWarehouse" aria-selected="true">Kho chính</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="campus-tab" data-toggle="tab" href="#campus" role="tab" aria-controls="campus" aria-selected="false">Khuôn viên</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="coldStorage-tab" data-toggle="tab" href="#coldStorage" role="tab" aria-controls="coldStorage" aria-selected="false">Kho đông</a>
+        </li>
+      </ul>
+      <!-- Nội dung các tab -->
+      <div class="tab-content mt-3" id="checklistTabContent">
+        <div class="tab-pane fade show active" id="mainWarehouse" role="tabpanel" aria-labelledby="mainWarehouse-tab">
+          <ul id="mainWarehouseList" class="list-group"></ul>
+        </div>
+        <div class="tab-pane fade" id="campus" role="tabpanel" aria-labelledby="campus-tab">
+          <ul id="campusList" class="list-group"></ul>
+        </div>
+        <div class="tab-pane fade" id="coldStorage" role="tabpanel" aria-labelledby="coldStorage-tab">
+          <ul id="coldStorageList" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Các thư viện JavaScript từ CDN: jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- File JavaScript của bạn -->
+  <script src="script.js"></script>
+</body>
+</html>
