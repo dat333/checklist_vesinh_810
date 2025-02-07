@@ -51,13 +51,25 @@
           <ul id="coldStorageList" class="list-group"></ul>
         </div>
       </div>
+
+      <!-- Phần quét QR Code -->
+      <div class="mt-4">
+        <button id="startScan" class="btn btn-success">Quét QR Code</button>
+        <div id="qrScanner" class="mt-3" style="display:none;">
+          <video id="video" width="300" height="200" style="border: 1px solid #ddd;"></video>
+          <p id="qrResult" class="mt-2"></p>
+          <button id="stopScan" class="btn btn-danger">Dừng Quét</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Các thư viện JavaScript từ CDN: jQuery, Popper.js, Bootstrap JS -->
+  <!-- Thư viện JavaScript: jQuery, Popper.js, Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Thư viện ZXing Browser từ CDN -->
+  <script src="https://unpkg.com/@zxing/browser@latest"></script>
   <!-- File JavaScript của bạn -->
   <script src="script.js"></script>
 </body>
